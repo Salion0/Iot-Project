@@ -1,0 +1,14 @@
+USE IoT_Project;
+CREATE TABLE Animals(
+    name VARCHAR(50) PRIMARY KEY NOT NULL,
+    eat_time TIME NOT NULL,
+    num_eat INT DEFAULT 1,
+    food_qt FLOAT NOT NULL,
+    water_qt FLOAT NOT NULL
+);
+
+CREATE TABLE DataSensors(
+    id INT NOT NULL PRIMARY KEY,
+    timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+    value FLOAT NOT NULL
+);
